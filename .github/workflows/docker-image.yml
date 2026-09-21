@@ -10,7 +10,7 @@ permissions:
   contents: write # needed for commiting to CD repo if using GITHUB_TOKEN
 
 env:
-  IMAGE_NAME: ${{ github.sha }}
+  IMAGE_TAG: ${{ github.sha }}
 
 jobs:
     compile:
